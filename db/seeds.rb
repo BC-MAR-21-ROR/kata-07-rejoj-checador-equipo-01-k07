@@ -18,4 +18,8 @@ Branch.create([
                { name: 'San Miguel 222', address: 'Colon 123' },
                { name: 'San Miguel 333', address: 'Roca 123' } 
              ])
-User.create(:email => "test@test.com", :password => "123456", :password_confirmation => "123456", :name => "Jhon", :lastname => "Doe")
+User.create([
+             {:email => "admin@email.com", :password => "123456", :password_confirmation => "123456", :name => "Jhon", :lastname => "Doe", role: :admin},
+             {:email => "employee@email.com", :password => "123456", :password_confirmation => "123456", :name => "Clark", :lastname => "Kent", role: :employee}
+            ])
+puts 'Usuarios creados'
