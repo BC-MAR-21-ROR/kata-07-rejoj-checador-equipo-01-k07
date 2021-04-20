@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'cancancan', '~> 3.2', '>= 3.2.1'
 # Authentication plugin https://github.com/heartcombo/devise
 gem 'devise', '~> 4.7', '>= 4.7.3'
 gem 'rails_admin', '~> 2.1', '>= 2.1.1'
