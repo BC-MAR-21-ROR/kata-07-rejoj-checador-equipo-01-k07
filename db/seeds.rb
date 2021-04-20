@@ -10,5 +10,12 @@
 # user.encrypted_password = '101689'
 # user.password_confirmation = '101689'
 # user.save!
+Branch.delete_all
+User.delete_all
 
+Branch.create([
+               { name: 'San Miguel 111', address: 'Lavalle 123' },
+               { name: 'San Miguel 222', address: 'Colon 123' },
+               { name: 'San Miguel 333', address: 'Roca 123' } 
+             ])
 User.create(:email => "test@test.com", :password => "123456", :password_confirmation => "123456", :name => "Jhon", :lastname => "Doe")
