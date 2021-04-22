@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/bootstrap-ruby/bootstrap_form.git
+  revision: efbdff86631637a5c2302c5a5260fdcfff8b6d0f
+  branch: bootstrap-5
+  specs:
+    bootstrap_form (5.0.0.alpha1)
+      actionpack (>= 5.2)
+      activemodel (>= 5.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -371,6 +380,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
+  bootstrap_form!
   byebug
   cancancan (~> 3.2, >= 3.2.1)
   capybara (>= 3.26)
