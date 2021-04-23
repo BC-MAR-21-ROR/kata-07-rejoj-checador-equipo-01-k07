@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+require Rails.root.join('lib', 'rails_admin', 'config', 'actions', 'report.rb')
 
 RailsAdmin.config do |config|
   ### Popular gems integration
@@ -33,8 +34,10 @@ RailsAdmin.config do |config|
     show
     edit
     delete
-    show_in_app
-
+    show_in_app  
+    report do
+      only ['LogTime']
+    end
     ## With an audit adapter, you can add:
     # history_index
     # history_show
