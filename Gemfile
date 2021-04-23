@@ -58,6 +58,7 @@ group :development do
   gem 'rubycritic', '~> 4.6'
   gem 'rubycritic-small-badge', require: false
   gem 'sandi_meter', '~> 1.2'
+  gem 'pry-rails', '~> 0.3.9'
 end
 
 group :test do
